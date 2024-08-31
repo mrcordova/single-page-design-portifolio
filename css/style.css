@@ -39,7 +39,6 @@
 html {
   height: 100%;
 }
-
 body {
   min-height: 100%;
   display: flex;
@@ -284,7 +283,8 @@ footer {
     display: inline-flex;
     display: inline flex;
     overflow-x: auto;
-    scroll-behavior: smooth;
+
+    gap: 0rem 0.9375rem;
 
     /* Mobile */
     -ms-overflow-style: none; /* Internet Explorer 10+ */
@@ -292,12 +292,10 @@ footer {
     & > ::-webkit-scrollbar {
       display: none; /* Safari and Chrome */
     }
-    gap: 0rem 0.9375rem;
     & img {
       /* Mobile */
       border-radius: 0.5rem;
       height: 11.25rem;
-      width: 88.125rem;
     }
   }
 }
