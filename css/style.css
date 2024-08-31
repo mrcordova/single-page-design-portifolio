@@ -211,12 +211,17 @@ body {
 }
 
 .slider {
-  overflow-x: auto;
   & div {
     display: inline-flex;
     display: inline flex;
+    overflow-x: auto;
 
     /* Mobile */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+    & > ::-webkit-scrollbar {
+      display: none; /* Safari and Chrome */
+    }
     gap: 0rem 0.9375rem;
     & img {
       /* Mobile */
