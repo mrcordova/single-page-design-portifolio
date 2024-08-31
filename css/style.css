@@ -34,3 +34,35 @@
   --body-font-size: 1.125rem;
   --body-line-height-med: 1.55;
 }
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--light-cream);
+}
+.consult-btn {
+  background-color: var(--black);
+  color: var(--light-cream);
+
+  /* Mobile */
+  font-size: 0.875rem;
+  line-height: 2;
+  padding-inline: 1.6875rem 1.75rem;
+  border-radius: 1.75rem;
+}
+.consultation-container {
+  display: flex;
+  justify-content: space-between;
+  /* Mobile */
+  padding-inline: 1rem;
+  padding-block-start: 1.125rem;
+
+  & img {
+    /* Mobile */
+    width: 3rem;
+  }
+}
