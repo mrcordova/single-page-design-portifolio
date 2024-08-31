@@ -238,15 +238,23 @@ footer {
 .intro-section {
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
   /* MObile */
+  /* padding-inline: 1rem; */
+  /* align-items: center; */
+  /* gap: 2.5rem; */
+  /* padding-block-end: 6.25rem; */
+  /* Tablet */
   padding-inline: 1rem;
   align-items: center;
-  gap: 2.5rem;
+  gap: 4.3125rem;
   padding-block-end: 6.25rem;
 
   & > img {
+    /* Mobile */
     width: 18.75rem;
+    /* Tablet */
+    width: 22.75rem;
+    margin-inline-start: -3.75rem;
   }
   & > div {
     display: flex;
@@ -322,5 +330,17 @@ footer {
       "graphic graphic ui apps"
       "graphic graphic ill ill"
       "photo photo motion motion";
+  }
+
+  .intro-section {
+    flex-direction: row;
+
+    & > div {
+      text-align: left;
+
+      .consult-btn {
+        align-self: start;
+      }
+    }
   }
 }
