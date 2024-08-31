@@ -141,6 +141,8 @@ footer {
   gap: 1.5rem 1.5625rem;
   padding-inline: 1rem;
   padding-block-end: 6.25rem;
+  grid-auto-columns: 1fr;
+
   grid-template-areas:
     "graphic graphic"
     "graphic graphic"
@@ -311,5 +313,14 @@ footer {
     /* Mobile */
     font-size: 1.5rem;
     line-height: 1.25;
+  }
+}
+
+@media (min-width: 48rem) {
+  .grid-sqts {
+    grid-template-areas:
+      "graphic graphic ui apps"
+      "graphic graphic ill ill"
+      "photo photo motion motion";
   }
 }
