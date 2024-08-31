@@ -22,6 +22,8 @@
   --meduim-brown: hsl(30, 5%, 45%);
   --light-cream: hsl(28, 100%, 97%);
 
+  --white: #ffffff;
+
   --heading-font-size-lg: 3.5rem;
   --heading-line-height-lg: 1.25;
 
@@ -64,6 +66,77 @@ body {
   & img {
     /* Mobile */
     width: 3rem;
+  }
+}
+
+.grid-sqts {
+  display: grid;
+
+  /* Mobile */
+  gap: 1.5rem 1.5625rem;
+  padding-inline: 1rem;
+  grid-template-areas:
+    "graphic graphic"
+    "graphic graphic"
+    "ui apps"
+    "ill ill"
+    "photo photo"
+    "motion motion";
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    /* Mobile */
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    & p {
+      color: var(--white);
+      line-height: 1.25;
+    }
+    & > img {
+      align-self: flex-end;
+    }
+  }
+  & .graphic-design {
+    grid-area: graphic;
+    background-color: var(--galactic-blue);
+
+    /* Mobile */
+    gap: 5.875rem;
+  }
+
+  & .ui {
+    grid-area: ui;
+    background-color: var(--summer-yellow);
+    /* Mobile */
+    gap: 2.5rem;
+  }
+
+  & .apps {
+    grid-area: apps;
+    background-color: var(--pink);
+    /* Mobile */
+    gap: 2.5rem;
+  }
+  & .illustrations {
+    grid-area: ill;
+    background-color: var(--light-red);
+    /* Mobile */
+    gap: 0.363125rem;
+  }
+  & .photography {
+    grid-area: photo;
+    background-color: var(--cyan);
+    /* Mobile */
+    gap: 2.5rem;
+  }
+
+  & .motion-graphics {
+    grid-area: motion;
+    background-color: var(--purple);
+    /* Mobile */
+    gap: 2.5rem;
   }
 }
 
