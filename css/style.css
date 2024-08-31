@@ -21,4 +21,16 @@
   --black: hsl(0, 0%, 1%);
   --meduim-brown: hsl(30, 5%, 45%);
   --light-cream: hsl(28, 100%, 97%);
+
+  --heading-font-size-lg: 3.5rem;
+  --heading-line-height-lg: 1.25;
+
+  --heading-font-size-med: 2.5rem;
+  --heading-line-height-med: 1.275;
+
+  --heading-font-size-sm: 2rem;
+  --heading-line-height-sm: 1.25;
+
+  --body-font-size: 1.125rem;
+  --body-line-height-med: 1.55;
 }
