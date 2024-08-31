@@ -45,6 +45,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: var(--light-cream);
+  overflow-x: hidden;
 }
 .consult-btn {
   background-color: var(--black);
@@ -176,6 +177,7 @@ body {
   padding-inline: 1rem;
   align-items: center;
   gap: 2.5rem;
+  padding-block-end: 6.25rem;
 
   & > img {
     width: 18.75rem;
@@ -204,6 +206,23 @@ body {
       align-self: center;
       background-color: var(--light-red);
       padding-block: 0.5rem;
+    }
+  }
+}
+
+.slider {
+  overflow-x: auto;
+  & div {
+    display: inline-flex;
+    display: inline flex;
+
+    /* Mobile */
+    gap: 0rem 0.9375rem;
+    & img {
+      /* Mobile */
+      border-radius: 0.5rem;
+      height: 11.25rem;
+      width: 88.125rem;
     }
   }
 }
