@@ -48,6 +48,11 @@ body {
   overflow-x: hidden;
 }
 
+footer {
+  /* Mobile */
+  padding-block-end: 2rem;
+}
+
 .arrows {
   display: flex;
   /* mobile */
@@ -58,6 +63,39 @@ body {
     /* Mobile */
     padding-block: 1.5rem;
     padding-inline: 1.5625rem;
+  }
+}
+
+.contact-section {
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  /* Mobile */
+  gap: 1.5rem;
+  text-align: center;
+  padding-block: 3.0625rem 3rem;
+  padding-inline: 1.5rem;
+  border-radius: 0.5rem;
+  margin-inline: 1rem;
+
+  margin-block-end: 1.375rem;
+  & h2 {
+    /* MObile */
+    font-size: 1.625rem;
+    line-height: 1.269;
+  }
+  & p {
+    color: var(--light-cream);
+    /* Mobile */
+    font-size: 1rem;
+    line-height: 1.625;
+  }
+  & .consult-btn {
+    background-color: var(--light-red);
+    /* Mobile */
+    align-self: center;
+    padding-block: 0.5rem;
   }
 }
 .consult-btn {
@@ -251,6 +289,7 @@ body {
   /* Mobile */
   gap: 2rem;
   align-items: center;
+  padding-block-end: 6.25rem;
 
   & h2 {
     /* Mobile */
