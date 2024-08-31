@@ -47,6 +47,19 @@ body {
   background-color: var(--light-cream);
   overflow-x: hidden;
 }
+
+.arrows {
+  display: flex;
+  /* mobile */
+  gap: 1rem;
+  & button {
+    background-color: var(--black);
+    border-radius: 50%;
+    /* Mobile */
+    padding-block: 1.5rem;
+    padding-inline: 1.5625rem;
+  }
+}
 .consult-btn {
   background-color: var(--black);
   color: var(--light-cream);
@@ -215,6 +228,7 @@ body {
     display: inline-flex;
     display: inline flex;
     overflow-x: auto;
+    scroll-behavior: smooth;
 
     /* Mobile */
     -ms-overflow-style: none; /* Internet Explorer 10+ */
@@ -229,5 +243,18 @@ body {
       height: 11.25rem;
       width: 88.125rem;
     }
+  }
+}
+.work-section {
+  display: flex;
+  flex-direction: column;
+  /* Mobile */
+  gap: 2rem;
+  align-items: center;
+
+  & h2 {
+    /* Mobile */
+    font-size: 1.5rem;
+    line-height: 1.25;
   }
 }
