@@ -63,6 +63,11 @@ footer {
     /* Mobile */
     padding-block: 1.5rem;
     padding-inline: 1.5625rem;
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--galactic-blue);
+    }
   }
 }
 
@@ -96,6 +101,10 @@ footer {
     /* Mobile */
     align-self: center;
     padding-block: 0.5rem;
+
+    &:hover {
+      background-color: var(--summer-yellow);
+    }
   }
 }
 .consult-btn {
@@ -107,6 +116,11 @@ footer {
   line-height: 2;
   padding-inline: 1.6875rem 1.75rem;
   border-radius: 1.75rem;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--galactic-blue);
+  }
 }
 .consultation-container {
   display: flex;
@@ -257,6 +271,10 @@ footer {
       align-self: center;
       background-color: var(--light-red);
       padding-block: 0.5rem;
+
+      &:hover {
+        background-color: var(--summer-yellow);
+      }
     }
   }
 }
