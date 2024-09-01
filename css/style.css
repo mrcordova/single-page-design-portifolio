@@ -398,7 +398,7 @@ footer {
     /* Tablet */
     /* gap: 1.5rem; */
     /* Desktop */
-    gap: 2.125rem;
+    /* gap: 2.125rem; */
 
     & h2 {
       font-size: clamp(1.625rem, 1.2672rem + 1.5267vw, 2rem);
@@ -446,10 +446,11 @@ footer {
     display: inline flex;
     overflow-x: auto;
 
+    gap: 0 clamp(0.9375rem, 0.0429rem + 3.8168vw, 1.875rem);
     /* Mobile */
     /* gap: 0rem 0.9375rem; */
     /* Tablet */
-    gap: 0rem 1.875rem;
+    /* gap: 0rem 1.875rem; */
 
     -ms-overflow-style: none; /* Internet Explorer 10+ */
     scrollbar-width: none; /* Firefox */
@@ -457,6 +458,8 @@ footer {
       display: none; /* Safari and Chrome */
     }
     & img {
+      border-radius: 0.5rem;
+      height: clamp(11.25rem, 0.5153rem + 45.8015vw, 22.5rem);
       /* Mobile */
       /* border-radius: 0.5rem; */
       /* height: 11.25rem; */
@@ -464,8 +467,8 @@ footer {
       /* border-radius: 0.5rem; */
       /* height: 22.5rem; */
       /* Desktop*/
-      border-radius: 0.5rem;
-      height: 22.5rem;
+      /* border-radius: 0.5rem; */
+      /* height: 22.5rem; */
     }
   }
 }
