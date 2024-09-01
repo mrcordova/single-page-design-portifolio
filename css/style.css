@@ -151,9 +151,14 @@ footer {
   display: grid;
 
   /* Mobile */
+  /* gap: 1.5rem 1.5625rem; */
+  /* padding-inline: 1rem; */
+  /* padding-block-end: 6.25rem; */
+  /*tablet */
   gap: 1.5rem 1.5625rem;
-  padding-inline: 1rem;
-  padding-block-end: 6.25rem;
+  padding-inline: 2.4375rem;
+  padding-block-end: 7.5rem;
+
   grid-auto-columns: 1fr;
 
   grid-template-areas:
