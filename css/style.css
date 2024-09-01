@@ -201,16 +201,20 @@ footer {
   /* padding-block-start: 1.125rem; */
 
   & img {
+    width: clamp(3rem, 2.0458rem + 4.0712vw, 4rem);
     /* Mobile */
     /* width: 3rem; */
     /* Tablet */
-    width: 4rem;
+    /* width: 4rem; */
   }
 }
 
 .grid-sqts {
   display: grid;
 
+  gap: 1.5rem 1.5625rem;
+  padding-inline: clamp(1rem, -0.3717rem + 5.8524vw, 2.4375rem);
+  padding-block-end: clamp(6.25rem, 5.0573rem + 5.0891vw, 7.5rem);
   /* Mobile */
   /* gap: 1.5rem 1.5625rem; */
   /* padding-inline: 1rem; */
@@ -219,10 +223,6 @@ footer {
   /* gap: 1.5rem 1.5625rem; */
   /* padding-inline: 2.4375rem; */
   /* padding-block-end: 7.5rem; */
-  /*desktop */
-  gap: 1.5rem 1.5625rem;
-  padding-inline: 10.3rem;
-  padding-block-end: 8.5rem;
 
   grid-auto-columns: 1fr;
 
@@ -528,6 +528,18 @@ footer {
       "graphic graphic ui apps"
       "graphic graphic ill ill"
       "photo photo motion motion";
+    gap: 1.5rem 1.5625rem;
+
+    padding-inline: clamp(2.4375rem, -6.5482rem + 18.7202vw, 10.3rem);
+    padding-block-end: clamp(7.5rem, 6.3571rem + 2.381vw, 8.5rem);
+    /*tablet */
+    /* gap: 1.5rem 1.5625rem; */
+    /* padding-inline: 2.4375rem; */
+    /* padding-block-end: 7.5rem; */
+    /*desktop */
+    /* gap: 1.5rem 1.5625rem; */
+    /* padding-inline: 10.3rem; */
+    /* padding-block-end: 8.5rem; */
   }
 
   .intro-section {
