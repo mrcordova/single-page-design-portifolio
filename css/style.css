@@ -49,7 +49,9 @@ body {
 
 footer {
   /* Mobile */
-  padding-block-end: 2rem;
+  /* padding-block-end: 2rem; */
+  /* Tablet */
+  padding-block-end: 3.5rem;
 }
 
 .arrows {
@@ -82,24 +84,39 @@ footer {
   padding-inline: 1.5rem;
   border-radius: 0.5rem;
   margin-inline: 1rem;
-
   margin-block-end: 1.375rem;
+  /* tablet*/
+  gap: 1.625rem;
+  text-align: center;
+  padding-block: 3.0625rem 3rem;
+  padding-inline: 4.6875rem;
+  border-radius: 0.5rem;
+  margin-inline: 2.4375rem;
+  margin-block-end: 2.375rem;
   & h2 {
     /* MObile */
-    font-size: 1.625rem;
-    line-height: 1.269;
+    /* font-size: 1.625rem; */
+    /* line-height: 1.269; */
+    /* Tablet*/
+    font-size: var(--heading-font-size-sm);
+    line-height: var(var(--heading-line-height-sm));
   }
   & p {
     color: var(--light-cream);
     /* Mobile */
-    font-size: 1rem;
-    line-height: 1.625;
+    /* font-size: 1rem; */
+    /* line-height: 1.625; */
+    /*Tablet */
+    font-size: var(--body-font-size);
+    line-height: var(--body-line-height-med);
   }
   & .consult-btn {
     background-color: var(--light-red);
-    /* Mobile */
     align-self: center;
-    padding-block: 0.5rem;
+    /* Mobile */
+    /* padding-block: 0.5rem; */
+    /* Mobile */
+    padding-block: 0.875rem;
 
     &:hover {
       background-color: var(--summer-yellow);
