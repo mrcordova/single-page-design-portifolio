@@ -83,10 +83,10 @@ footer {
   text-align: center;
   gap: clamp(1.5rem, 1.3807rem + 0.5089vw, 1.625rem);
   padding-block: 3.0625rem 3rem;
-  padding-inline: 4.6875rem;
+  padding-inline: clamp(1.5rem, -1.5415rem + 12.9771vw, 4.6875rem);
   border-radius: 0.5rem;
-  margin-inline: 2.4375rem;
-  margin-block-end: 2.375rem;
+  margin-inline: clamp(1rem, -0.3717rem + 5.8524vw, 2.4375rem);
+  margin-block-end: clamp(1.375rem, 0.4208rem + 4.0712vw, 2.375rem);
   /* Mobile */
   /* gap: 1.5rem; */
   /* text-align: center; */
@@ -95,6 +95,14 @@ footer {
   /* border-radius: 0.5rem; */
   /* margin-inline: 1rem; */
   /* margin-block-end: 1.375rem; */
+  /* tablet*/
+  /* gap: 1.625rem; */
+  /* text-align: center; */
+  /* padding-block: 3.0625rem 3rem; */
+  /* padding-inline: 4.6875rem; */
+  /* border-radius: 0.5rem; */
+  /* margin-inline: 2.4375rem; */
+  /* margin-block-end: 2.375rem; */
 
   & > div {
     display: flex;
