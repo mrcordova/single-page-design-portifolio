@@ -149,22 +149,28 @@ footer {
     }
   }
 }
+
 .consult-btn {
   background-color: var(--black);
   color: var(--light-cream);
 
+  font-size: clamp(0.875rem, 0.7557rem + 0.5089vw, 1rem);
+  padding-inline: clamp(1.6875rem, 0.614rem + 4.5802vw, 2.8125rem)
+    clamp(1.75rem, 0.7362rem + 4.3257vw, 2.8125rem);
+  padding-block: clamp(0.5rem, 0.1422rem + 1.5267vw, 0.875rem);
+  border-radius: clamp(1.75rem, 1.3922rem + 1.5267vw, 2.125rem);
   /* Mobile */
   /* font-size: 0.875rem; */
-  /* line-height: 2; */
+  line-height: 2;
   /* padding-inline: 1.6875rem 1.75rem; */
   /* padding-block: 0.5rem; */
   /* border-radius: 1.75rem; */
   /* Tablet */
-  font-size: 1rem;
-  line-height: 1.75;
-  padding-inline: 2.8125rem;
-  padding-block: 0.875rem;
-  border-radius: 2.125rem;
+  /* font-size: 1rem; */
+  /* line-height: 1.75; */
+  /* padding-inline: 2.8125rem; */
+  /* padding-block: 0.875rem; */
+  /* border-radius: 2.125rem; */
 
   &:hover {
     cursor: pointer;
@@ -492,6 +498,10 @@ footer {
     & p {
       line-height: var(--body-line-height-med);
     }
+  }
+
+  .consult-btn {
+    line-height: 1.75;
   }
   .grid-sqts {
     grid-template-areas:
