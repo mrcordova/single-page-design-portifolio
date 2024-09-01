@@ -39,7 +39,7 @@
 html {
   height: 100%;
   margin: 0 auto;
-  /* max-width: 90rem; */
+  max-width: 90rem;
 }
 body {
   min-height: 100%;
@@ -95,13 +95,35 @@ footer {
   border-radius: 0.5rem;
   margin-inline: 2.4375rem;
   margin-block-end: 2.375rem;
+  /* desktop*/
+  gap: 10rem;
+  text-align: center;
+  padding-block: 5.0625rem 5rem;
+  padding-inline: 4.0625rem 5.9375rem;
+  border-radius: 0.5rem;
+  margin-inline: 10.3125rem;
+  margin-block-end: 2.375rem;
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+    /* Mobile */
+    /* gap: 1.5rem; */
+    /* tablet*/
+    /* gap: 1.625rem; */
+    /* desktop*/
+    gap: 1.5625rem;
+  }
   & h2 {
     /* MObile */
     /* font-size: 1.625rem; */
     /* line-height: 1.269; */
     /* Tablet*/
-    font-size: var(--heading-font-size-sm);
-    line-height: var(var(--heading-line-height-sm));
+    /* font-size: var(--heading-font-size-sm); */
+    /* line-height: var(--heading-line-height-sm); */
+    /* Desktop*/
+    font-size: var(--heading-font-size-med);
+    line-height: var(--heading-line-height-med);
   }
   & p {
     color: var(--light-cream);
@@ -111,6 +133,9 @@ footer {
     /*Tablet */
     font-size: var(--body-font-size);
     line-height: var(--body-line-height-med);
+
+    /* Desktop */
+    max-width: 33.75rem;
   }
   & .consult-btn {
     background-color: var(--light-red);
@@ -449,6 +474,14 @@ footer {
 }
 
 @media (min-width: 90rem) {
+  .contact-section {
+    flex-direction: row;
+    /* justify-content: space-between; */
+
+    & > div {
+      text-align: start;
+    }
+  }
   .grid-sqts {
     grid-template-areas:
       "graphic graphic ui apps photo photo"
