@@ -39,7 +39,7 @@
 html {
   height: 100%;
   margin: 0 auto;
-  max-width: 90rem;
+  /* max-width: 90rem; */
 }
 body {
   min-height: 100%;
@@ -154,9 +154,12 @@ footer {
   /* Mobile */
   /* padding-inline: 1rem; */
   /* padding-block-start: 1.125rem; */
-  /* Mobile */
-  padding-inline: 2.4375rem 2.5rem;
-  padding-block-start: 1.125rem;
+  /* Tablet */
+  /* padding-inline: 2.4375rem 2.5rem; */
+  /* padding-block-start: 1.125rem; */
+  /* Desktop */
+  padding-inline: 10.3125rem 10.25rem;
+  padding-block-start: 2.125rem;
 
   & img {
     /* Mobile */
@@ -255,9 +258,13 @@ footer {
   /* padding-block: 2rem; */
   /* gap: 1rem; */
   /* Tablet */
+  /* padding-inline: 2.40625rem; */
+  /* padding-block: 4rem; */
+  /* gap: 1.6875rem; */
+  /* Desktop */
   padding-inline: 2.40625rem;
-  padding-block: 4rem;
-  gap: 1.6875rem;
+  padding-block: 4.125rem;
+  gap: 1.4375rem;
 
   & h1 {
     color: var(--black);
@@ -265,8 +272,11 @@ footer {
     /* font-size: var(--heading-font-size-sm); */
     /* line-height: var(--heading-line-height-sm); */
     /* Tablet */
-    font-size: 2.75rem;
-    line-height: 1.25;
+    /* font-size: 2.75rem; */
+    /* line-height: 1.25; */
+    /* Desktop*/
+    font-size: var(--heading-font-size-lg);
+    line-height: var(--heading-line-height-lg);
   }
 
   & p {
@@ -276,7 +286,11 @@ footer {
     /* font-size: 1rem; */
     /* line-height: 1.625; */
     /* Tablet */
-    padding-inline: 3.65rem;
+    /* padding-inline: 3.65rem; */
+    /* font-size: var(--body-font-size); */
+    /* line-height: var(--body-line-height-med); */
+    /* Tablet */
+    padding-inline: 19.09375rem;
     font-size: var(--body-font-size);
     line-height: var(--body-line-height-med);
   }
