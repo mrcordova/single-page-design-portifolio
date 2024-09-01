@@ -78,13 +78,13 @@ footer {
   display: flex;
   flex-direction: column;
   /* Mobile */
-  gap: 1.5rem;
-  text-align: center;
-  padding-block: 3.0625rem 3rem;
-  padding-inline: 1.5rem;
-  border-radius: 0.5rem;
-  margin-inline: 1rem;
-  margin-block-end: 1.375rem;
+  /* gap: 1.5rem; */
+  /* text-align: center; */
+  /* padding-block: 3.0625rem 3rem; */
+  /* padding-inline: 1.5rem; */
+  /* border-radius: 0.5rem; */
+  /* margin-inline: 1rem; */
+  /* margin-block-end: 1.375rem; */
   /* tablet*/
   gap: 1.625rem;
   text-align: center;
@@ -410,5 +410,13 @@ footer {
         align-self: start;
       }
     }
+  }
+}
+
+@media (min-width: 90rem) {
+  .grid-sqts {
+    grid-template-areas:
+      "graphic graphic ui apps photo photo"
+      "graphic graphic ill ill motion motion";
   }
 }
