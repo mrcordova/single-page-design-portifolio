@@ -189,15 +189,16 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  padding-inline: clamp(1rem, -0.3717rem + 5.8524vw, 2.4375rem)
+    clamp(1rem, -0.4313rem + 6.1069vw, 2.5rem);
+  padding-block-start: 1.125rem;
   /* Mobile */
   /* padding-inline: 1rem; */
   /* padding-block-start: 1.125rem; */
   /* Tablet */
   /* padding-inline: 2.4375rem 2.5rem; */
   /* padding-block-start: 1.125rem; */
-  /* Desktop */
-  padding-inline: 10.3125rem 10.25rem;
-  padding-block-start: 2.125rem;
 
   & img {
     /* Mobile */
@@ -510,6 +511,17 @@ footer {
 
   .consult-btn {
     line-height: 1.75;
+  }
+  .consultation-container {
+    padding-inline: clamp(2.4375rem, -6.5625rem + 18.75vw, 10.3125rem)
+      clamp(2.5rem, -6.3571rem + 18.4524vw, 10.25rem);
+    padding-block-start: clamp(1.125rem, -0.0179rem + 2.381vw, 2.125rem);
+    /* Tablet */
+    /* padding-inline: 2.4375rem 2.5rem; */
+    /* padding-block-start: 1.125rem; */
+    /* Desktop */
+    /* padding-inline: 10.3125rem 10.25rem; */
+    /* padding-block-start: 2.125rem; */
   }
   .grid-sqts {
     grid-template-areas:
