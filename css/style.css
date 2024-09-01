@@ -80,6 +80,13 @@ footer {
   color: var(--white);
   display: flex;
   flex-direction: column;
+  text-align: center;
+  gap: clamp(1.5rem, 1.3807rem + 0.5089vw, 1.625rem);
+  padding-block: 3.0625rem 3rem;
+  padding-inline: 4.6875rem;
+  border-radius: 0.5rem;
+  margin-inline: 2.4375rem;
+  margin-block-end: 2.375rem;
   /* Mobile */
   /* gap: 1.5rem; */
   /* text-align: center; */
@@ -88,34 +95,22 @@ footer {
   /* border-radius: 0.5rem; */
   /* margin-inline: 1rem; */
   /* margin-block-end: 1.375rem; */
-  /* tablet*/
-  gap: 1.625rem;
-  text-align: center;
-  padding-block: 3.0625rem 3rem;
-  padding-inline: 4.6875rem;
-  border-radius: 0.5rem;
-  margin-inline: 2.4375rem;
-  margin-block-end: 2.375rem;
-  /* desktop*/
-  gap: 10rem;
-  text-align: center;
-  padding-block: 5.0625rem 5rem;
-  padding-inline: 4.0625rem 5.9375rem;
-  border-radius: 0.5rem;
-  margin-inline: 10.3125rem;
-  margin-block-end: 2.375rem;
 
   & > div {
     display: flex;
     flex-direction: column;
+
+    gap: clamp(1.5rem, 1.3807rem + 0.5089vw, 1.625rem);
     /* Mobile */
     /* gap: 1.5rem; */
     /* tablet*/
     /* gap: 1.625rem; */
     /* desktop*/
-    gap: 1.5625rem;
+    /* gap: 1.5625rem; */
   }
   & h2 {
+    font-size: clamp(1.625rem, 1.2672rem + 1.5267vw, 2rem);
+    line-height: 1.269;
     /* MObile */
     /* font-size: 1.625rem; */
     /* line-height: 1.269; */
@@ -123,28 +118,31 @@ footer {
     /* font-size: var(--heading-font-size-sm); */
     /* line-height: var(--heading-line-height-sm); */
     /* Desktop*/
-    font-size: var(--heading-font-size-med);
-    line-height: var(--heading-line-height-med);
+    /* font-size: var(--heading-font-size-med); */
+    /* line-height: var(--heading-line-height-med); */
   }
   & p {
     color: var(--light-cream);
+
+    font-size: clamp(1rem, 0.8807rem + 0.5089vw, 1.125rem);
     /* Mobile */
     /* font-size: 1rem; */
-    /* line-height: 1.625; */
+    line-height: 1.625;
     /*Tablet */
-    font-size: var(--body-font-size);
-    line-height: var(--body-line-height-med);
+    /* font-size: var(--body-font-size); */
+    /* line-height: var(--body-line-height-med); */
 
     /* Desktop */
-    max-width: 33.75rem;
+    /* max-width: 33.75rem; */
   }
   & .consult-btn {
     background-color: var(--light-red);
     align-self: center;
+    padding-block: clamp(0.5rem, 0.1422rem + 1.5267vw, 0.875rem);
     /* Mobile */
     /* padding-block: 0.5rem; */
     /* Mobile */
-    padding-block: 0.875rem;
+    /* padding-block: 0.875rem; */
 
     &:hover {
       background-color: var(--summer-yellow);
@@ -454,6 +452,47 @@ footer {
 }
 
 @media (min-width: 48rem) {
+  .contact-section {
+    gap: clamp(1.625rem, -7.9464rem + 19.9405vw, 10rem);
+    padding-block: clamp(3.0625rem, 0.7768rem + 4.7619vw, 5.0625rem)
+      clamp(3rem, 0.7143rem + 4.7619vw, 5rem);
+    padding-inline: clamp(4.0625rem, 5.4018rem + -1.4881vw, 4.6875rem)
+      clamp(4.6875rem, 3.2589rem + 2.9762vw, 5.9375rem);
+    margin-inline: clamp(2.4375rem, -6.5625rem + 18.75vw, 10.3125rem);
+    margin-block-end: 2.375rem;
+    /* tablet*/
+    /* gap: 1.625rem; */
+    /* text-align: center; */
+    /* padding-block: 3.0625rem 3rem; */
+    /* padding-inline: 4.6875rem; */
+    /* border-radius: 0.5rem; */
+    /* margin-inline: 2.4375rem; */
+    /* margin-block-end: 2.375rem; */
+    /* desktop*/
+    /* gap: 10rem; */
+    /* text-align: center; */
+    /* padding-block: 5.0625rem 5rem; */
+    /* padding-inline: 4.0625rem 5.9375rem; */
+    /* border-radius: 0.5rem; */
+    /* margin-inline: 10.3125rem; */
+    /* margin-block-end: 2.375rem; */
+
+    & div {
+      gap: clamp(1.5625rem, 1.6964rem + -0.1488vw, 1.625rem);
+    }
+
+    & h2 {
+      font-size: clamp(2rem, 1.4286rem + 1.1905vw, 2.5rem);
+      /* Tablet*/
+      /* font-size: var(--heading-font-size-sm); */
+      line-height: var(--heading-line-height-sm);
+      /* Desktop*/
+      /* font-size: var(--heading-font-size-med); */
+    }
+    & p {
+      line-height: var(--body-line-height-med);
+    }
+  }
   .grid-sqts {
     grid-template-areas:
       "graphic graphic ui apps"
@@ -481,6 +520,14 @@ footer {
 
     & > div {
       text-align: start;
+    }
+
+    & h2 {
+      line-height: var(--heading-line-height-med);
+    }
+
+    & p {
+      max-width: 33.75rem;
     }
   }
   .grid-sqts {
