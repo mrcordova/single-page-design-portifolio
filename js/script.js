@@ -7,8 +7,8 @@ const TOTAl_NUM_IMGS = 5;
 sliderImgs[currentImgId].scrollIntoView({
   block: "center",
   inline: "center",
-  behavior: "instant",
 });
+
 function scrollToImg(e) {
   currentImgId =
     (currentImgId + parseInt(e.currentTarget.dataset.value)) % TOTAl_NUM_IMGS;
@@ -17,7 +17,6 @@ function scrollToImg(e) {
   sliderImgs[currentImgId].scrollIntoView({
     block: "center",
     inline: "center",
-    behavior: "instant",
   });
 }
 
