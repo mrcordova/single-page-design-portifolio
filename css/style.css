@@ -388,7 +388,6 @@ footer {
     /* Tablet */
     gap: 0rem 1.875rem;
 
-    /* Mobile */
     -ms-overflow-style: none; /* Internet Explorer 10+ */
     scrollbar-width: none; /* Firefox */
     & > ::-webkit-scrollbar {
@@ -399,6 +398,9 @@ footer {
       /* border-radius: 0.5rem; */
       /* height: 11.25rem; */
       /* Tablet*/
+      /* border-radius: 0.5rem; */
+      /* height: 22.5rem; */
+      /* Desktop*/
       border-radius: 0.5rem;
       height: 22.5rem;
     }
@@ -411,9 +413,9 @@ footer {
   /* gap: 2rem; */
   align-items: center;
   /* padding-block-end: 6.25rem; */
-  /* Mobile */
+  /* tablet */
   gap: 3.5rem;
-  padding-block-end: 7.5rem;
+  padding-block-end: 5.5rem;
 
   & h2 {
     /* Mobile */
