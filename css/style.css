@@ -475,21 +475,26 @@ footer {
 .work-section {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: clamp(2rem, 0.5687rem + 6.1069vw, 3.5rem);
+  padding-block-end: clamp(5.5rem, 6.9656rem + -3.0534vw, 6.25rem);
   /* Mobile */
   /* gap: 2rem; */
-  align-items: center;
+  /* align-items: center; */
   /* padding-block-end: 6.25rem; */
   /* tablet */
-  gap: 3.5rem;
-  padding-block-end: 5.5rem;
+  /* gap: 3.5rem; */
+  /* padding-block-end: 5.5rem; */
 
   & h2 {
+    font-size: clamp(1.5rem, 1.0229rem + 2.0356vw, 2rem);
+    line-height: 1.25;
     /* Mobile */
     /* font-size: 1.5rem; */
     /* line-height: 1.25; */
     /* tablet */
-    font-size: var(--heading-font-size-sm);
-    line-height: var(--heading-line-height-sm);
+    /* font-size: var(--heading-font-size-sm); */
+    /* line-height: var(--heading-line-height-sm); */
   }
 }
 
@@ -661,6 +666,12 @@ footer {
       .consult-btn {
         align-self: start;
       }
+    }
+  }
+
+  .work-section {
+    & h2 {
+      line-height: var(--heading-line-height-sm);
     }
   }
 }
