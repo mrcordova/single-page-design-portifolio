@@ -177,9 +177,13 @@ footer {
   /* padding-inline: 1rem; */
   /* padding-block-end: 6.25rem; */
   /*tablet */
+  /* gap: 1.5rem 1.5625rem; */
+  /* padding-inline: 2.4375rem; */
+  /* padding-block-end: 7.5rem; */
+  /*desktop */
   gap: 1.5rem 1.5625rem;
-  padding-inline: 2.4375rem;
-  padding-block-end: 7.5rem;
+  padding-inline: 10.3rem;
+  padding-block-end: 8.5rem;
 
   grid-auto-columns: 1fr;
 
@@ -263,7 +267,7 @@ footer {
   /* gap: 1.6875rem; */
   /* Desktop */
   padding-inline: 2.40625rem;
-  padding-block: 4.125rem;
+  padding-block: 4.125rem 5rem;
   gap: 1.4375rem;
 
   & h1 {
